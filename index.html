@@ -21,7 +21,7 @@
   <script src="https://use.fontawesome.com/3ca2eb4c92.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#exCollapsingNavbar2">
 
   <!-- Fixed navbar -->
   <div class="pos-f-t">
@@ -32,7 +32,7 @@
     <nav class="navbar navbar-light navbar-static-top bg-faded">
       <div class="container nav-center">
         <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav " role="tablist">
             <li class="nav-item">
               <a class="nav-link page-scroll" href="#main">Главная<span class="sr-only">(current)</span></a>
             </li>
@@ -89,8 +89,15 @@
         </div>
         <div class="row">
           <div class="col-xs-12 col-md-12 button-center">
-            <a href="#" class="button-div-block-3">
-              <div class="button-block-3">Рукописи</div>
+            <a href="http://www.proza.ru/avtor/deivodni" class="button-div-block-3">
+              <div class="button-block-3">Проза</div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-12 button-center">
+            <a href="http://www.stihi.ru/avtor/deivodni" class="button-div-block-3">
+              <div class="button-block-3">Стихотворения</div>
             </a>
           </div>
         </div>              
@@ -207,6 +214,10 @@
         links = this.getElementsByTagName('a');
         blueimp.Gallery(links, options);
       };
+    </script>
+
+    <script>
+      $('body').scrollspy({ target: '#exCollapsingNavbar2' })
     </script>
 
   </body>

@@ -11,6 +11,7 @@ body {
   font-family: 'Roboto Slab', serif;
   height: 100%;
   background-color: black;
+  position: relative;
 }
 
 /* Sticky footer and header styles
