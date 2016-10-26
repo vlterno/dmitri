@@ -60,6 +60,24 @@ body {
     padding: .8rem 1rem;
 }
 
+.navbar-light .navbar-toggler {
+    background-image: none;
+    border-color: rgb(255, 255, 255);
+	color: white;
+}
+
+.navbar-toggler {
+    width: auto;
+    font-size: 0.8rem;
+    line-height: 0.5;
+    background-size: 24px 24px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
 /* Custom page CSS
 -------------------------------------------------- */
 body > .block-1 {
